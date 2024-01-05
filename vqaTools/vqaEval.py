@@ -115,11 +115,7 @@ class VQAEval:
             gtAns = gts[quesId]['answer']
             gtAns = pre_answer(gtAns)
 
-            # 比较 真实回答 和 预测回答
             if gtAns == resAns:
-                gtAcc = 1
-            elif gtAns.__contains__(resAns):
-                count_contains += 1
                 gtAcc = 1
             else:
                 count_error += 1
@@ -150,7 +146,6 @@ class VQAEval:
         self.setAccuracy(accQA, accQuesType, accAnsType)
         print("Done computing accuracy")
         print('count_error == ', count_error)
-        print('count_contains == ', count_contains)
 
 
 
