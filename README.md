@@ -86,6 +86,9 @@ python3 train_vqa.py --dataset_use rad --checkpoint ./pretrain/med_pretrain_29.p
 ## Comparison with the sota
 <img src="fig/results.png">
 
+## Pretrained weights
+You can download the pre-trained weights through the following [link](https://drive.google.com/file/d/1ZxwjfDeBYTMpw4mN_R9-gAcR9UOJiAFb/view?usp=sharing).
+
 ## Citation:
 ```
 @article{MUMC,
